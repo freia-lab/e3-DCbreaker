@@ -1,0 +1,18 @@
+record(ai, "$(P)$(DEV)PT01:sRdV") {
+    field(DESC,"Pressure 1")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 52)INT16")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")
+    field(EGU,"bar")
+#    field(HOPR,"80.0")
+#    field(LOPR,"-70.0")
+    field(PREC,"3")
+#    field(ADEL,"0.1")
+#    field(MDEL,"0.01")
+#    field(HIGH,"-55.0")
+#    field(HSV,"MINOR")
+#    field(HIHI,"-40.0")
+#    field(HHSV,"MAJOR")
+    field(SCAN,"1 second")
+}
