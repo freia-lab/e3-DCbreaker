@@ -27,7 +27,7 @@ drvModbusAsynConfigure(PORT1_DATA, "PORT1", 1, 4, 0, 85, "INT16", 2000, "astrol"
 drvModbusAsynConfigure(PORT1_DATA_PARAM, "PORT1", 1, 3, 16, 4, "INT16", 2000, "astrol")
 
 #Load your database defining the EPICS records
-dbLoadRecords("dcbreaker.db", "PORT_DATA=PORT1_DATA,PORT_PARAM=PORT1_DATA_PARAM,P=MAG-,DEV=EE-1:")
+dbLoadRecords("dcbreaker.db", "PORT_DATA=PORT1_DATA,PORT_PARAM=PORT1_DATA_PARAM,P=MAG-,D=EE-1:")
 
 #asynSetTraceIOMask "PORT1",0,4   # Enable traceIOHex
 #asynSetTraceMask "PORT1",0,0x1f     # Enable traceError and traceIODriver
