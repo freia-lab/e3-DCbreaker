@@ -285,7 +285,7 @@ record(ai, "$(P)$(D)TT003") {
 record(ai, "$(P)$(D)V1ce-1") {
     field(DESC,"Module 1 voltage VCE path 1")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 65)INT32")
+    field(INP,"@asyn($(PORT_DATA) 65)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -294,7 +294,7 @@ record(ai, "$(P)$(D)V1ce-1") {
 record(ai, "$(P)$(D)V1f-1") {
     field(DESC,"Module 1 voltage VF path 1")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 67)INT32")
+    field(INP,"@asyn($(PORT_DATA) 67)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -303,7 +303,7 @@ record(ai, "$(P)$(D)V1f-1") {
 record(ai, "$(P)$(D)V2ce-1") {
     field(DESC,"Module 1 voltage VCE path 2")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 69)INT32")
+    field(INP,"@asyn($(PORT_DATA) 69)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -312,7 +312,7 @@ record(ai, "$(P)$(D)V2ce-1") {
 record(ai, "$(P)$(D)V2f-1") {
     field(DESC,"Module 1 voltage VF path 2")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 71)INT32")
+    field(INP,"@asyn($(PORT_DATA) 71)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -321,7 +321,7 @@ record(ai, "$(P)$(D)V2f-1") {
 record(ai, "$(P)$(D)V3-1") {
     field(DESC,"Module 1 voltage breaker")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 73)INT32")
+    field(INP,"@asyn($(PORT_DATA) 73)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -330,7 +330,7 @@ record(ai, "$(P)$(D)V3-1") {
 record(ai, "$(P)$(D)V1ce-2") {
     field(DESC,"Module 2 voltage VCE path 1")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 75)INT32")
+    field(INP,"@asyn($(PORT_DATA) 75)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -339,7 +339,7 @@ record(ai, "$(P)$(D)V1ce-2") {
 record(ai, "$(P)$(D)V1f-2") {
     field(DESC,"Module 2 voltage VF path 1")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 77)INT32")
+    field(INP,"@asyn($(PORT_DATA) 77)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -348,7 +348,7 @@ record(ai, "$(P)$(D)V1f-2") {
 record(ai, "$(P)$(D)V2ce-2") {
     field(DESC,"Module 2 voltage VCE path 2")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 79)INT32")
+    field(INP,"@asyn($(PORT_DATA) 79)INT32_BE")
     field(EGU,"mV")
     field(PREC,"3")
     field(SCAN,"1 second")
@@ -357,7 +357,7 @@ record(ai, "$(P)$(D)V2ce-2") {
 record(ai, "$(P)$(D)V2f-2") {
     field(DESC,"Module 2 voltage VF path 2")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 81)INT32")
+    field(INP,"@asyn($(PORT_DATA) 81)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
@@ -366,7 +366,7 @@ record(ai, "$(P)$(D)V2f-2") {
 record(ai, "$(P)$(D)V3-2") {
     field(DESC,"Module 2 voltage breaker")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 83)INT32")
+    field(INP,"@asyn($(PORT_DATA) 83)INT32_BE")
     field(EGU,"mV")
     field(PREC,"4")
     field(SCAN,"1 second")
