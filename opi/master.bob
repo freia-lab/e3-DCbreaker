@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <FIELD>DESC</FIELD>
+    </macros>
+    <file>test.bob</file>
+    <x>20</x>
+    <width>830</width>
+    <height>919</height>
+    <resize>2</resize>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <FIELD>EGU</FIELD>
+    </macros>
+    <file>test.bob</file>
+    <x>30</x>
+    <y>240</y>
+    <width>830</width>
+    <height>919</height>
+    <resize>2</resize>
+  </widget>
+</display>
