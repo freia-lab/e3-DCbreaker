@@ -1,11 +1,51 @@
 
 
+record(mbbi, "$(P)$(D)GlobStat") {
+    field(DESC,"Global status")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 16)UINT16")
+    field(SCAN,"I/O Intr")
+}
 
+record(mbbi, "$(P)$(D)GlobWarn") {
+    field(DESC,"Global warning")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 17)UINT16")
+    field(SCAN,"I/O Intr")
+}
+
+record(mbbi, "$(P)$(D)GlobErr") {
+    field(DESC,"Global error")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 18)UINT16")
+    field(SCAN,"I/O Intr")
+}
+
+record(mbbi, "$(P)$(D)ModuleStat") {
+    field(DESC,"Module status")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 19)UINT16")
+    field(SCAN,"I/O Intr")
+}
+
+record(mbbi, "$(P)$(D)ModuleWarn") {
+    field(DESC,"Module warning")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 20)UINT16")
+    field(SCAN,"I/O Intr")
+}
+
+record(mbbi, "$(P)$(D)ModuleErr") {
+    field(DESC,"Module error")
+    field(DTYP,"asynInt32")
+    field(INP,"@asyn($(PORT_DATA) 21)UINT16")
+    field(SCAN,"I/O Intr")
+}
 
 record(ai, "$(P)$(D)IcontTot:sSetV") {
     field(DESC,"Continuous total current")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_PARAM) 16)INT16")
+    field(INP,"@asyn($(PORT_PARAM) 0)INT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"A")
@@ -24,10 +64,10 @@ record(ai, "$(P)$(D)IcontTot:sSetV") {
 record(ai, "$(P)$(D)OvldFactor:sSetV") {
     field(DESC,"Overload factor")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_PARAM) 17)UINT16")
+    field(INP,"@asyn($(PORT_PARAM) 1)UINT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
-    field(EGU,"'%'")
+    field(EGU,"%")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
     field(PREC,"0")
@@ -43,7 +83,7 @@ record(ai, "$(P)$(D)OvldFactor:sSetV") {
 record(ai, "$(P)$(D)OvldTime:sSetV") {
     field(DESC,"Overload time")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_PARAM) 18)UINT16")
+    field(INP,"@asyn($(PORT_PARAM) 2)UINT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"s")
@@ -62,7 +102,7 @@ record(ai, "$(P)$(D)OvldTime:sSetV") {
 record(ai, "$(P)$(D)Ipeak:sSetV") {
     field(DESC,"Peak current")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_PARAM) 19)UINT16")
+    field(INP,"@asyn($(PORT_PARAM) 3)UINT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"A")
