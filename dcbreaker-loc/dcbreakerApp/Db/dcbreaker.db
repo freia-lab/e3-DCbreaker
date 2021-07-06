@@ -5,77 +5,77 @@
 record(ai, "$(P)$(D)IcontTot:sSetV") {
     field(DESC,"Continuous total current")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 16)INT16")
+    field(INP,"@asyn($(PORT_PARAM) 16)INT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"A")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)OvldFactor:sSetV") {
     field(DESC,"Overload factor")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 17)UINT16")
+    field(INP,"@asyn($(PORT_PARAM) 17)UINT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"'%'")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)OvldTime:sSetV") {
     field(DESC,"Overload time")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 18)UINT16")
+    field(INP,"@asyn($(PORT_PARAM) 18)UINT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"s")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)Ipeak:sSetV") {
     field(DESC,"Peak current")
     field(DTYP,"asynInt32")
-    field(INP,"@asyn($(PORT_DATA) 19)UINT16")
+    field(INP,"@asyn($(PORT_PARAM) 19)UINT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
     field(EGU,"A")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)I-1") {
@@ -87,14 +87,14 @@ record(ai, "$(P)$(D)I-1") {
     field(EGU,"A")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)I-2") {
@@ -106,14 +106,14 @@ record(ai, "$(P)$(D)I-2") {
     field(EGU,"A")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)Itot") {
@@ -125,14 +125,14 @@ record(ai, "$(P)$(D)Itot") {
     field(EGU,"A")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)OvldT") {
@@ -141,18 +141,19 @@ record(ai, "$(P)$(D)OvldT") {
     field(INP,"@asyn($(PORT_DATA) 51)INT16")
 #    field(LINR, "SLOPE")
 #    field(ESLO, "0.001")
-    field(EGU,"deg C")
+    field(EGU,"%")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"0")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)PT01") {
     field(DESC,"Pressure 1")
@@ -160,35 +161,40 @@ record(ai, "$(P)$(D)PT01") {
     field(INP,"@asyn($(PORT_DATA) 52)INT16")
     field(LINR, "SLOPE")
     field(ESLO, "0.001")
-    field(EGU,"mbar")
+    field(EGU,"Bar")
 #    field(HOPR,"80.0")
 #    field(LOPR,"-70.0")
-    field(PREC,"3")
+    field(PREC,"2")
 #    field(ADEL,"0.1")
 #    field(MDEL,"0.01")
 #    field(HIGH,"-55.0")
 #    field(HSV,"MINOR")
 #    field(HIHI,"-40.0")
 #    field(HHSV,"MAJOR")
-    field(SCAN,"1 second")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)PT02") {
     field(DESC,"Pressure 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 53)INT16")
-    field(EGU,"mbar")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")
+    field(EGU,"Bar")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)PTdiff") {
     field(DESC,"Pressure delta")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 54)INT16")
-    field(EGU,"mbar")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")
+    field(EGU,"Bar")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
 
 
@@ -197,177 +203,210 @@ record(ai, "$(P)$(D)OverP") {
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 55)INT16")
     field(EGU,"%")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT100") {
     field(DESC,"Tsense 1")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 56)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT200") {
     field(DESC,"Tsense 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 57)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT00diff") {
     field(DESC,"Tsense delta")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 58)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)PyrofuseRdy") {
     field(DESC,"Pyrofuses ready (8V)")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 59)INT16")
-    field(EGU,"mV")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)PyrofuseOK") {
     field(DESC,"Pyrofuses ok (8V)")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 60)INT16")
-    field(EGU,"mV")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT101") {
     field(DESC,"Rtemp 1")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 61)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT201") {
     field(DESC,"Rtemp 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 62)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT01diff") {
     field(DESC,"Rtemp delta")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 63)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)TT003") {
     field(DESC,"Controller temperature")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 64)INT16")
-    field(EGU,"deg C")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(EGU,"°C")
+    field(PREC,"0")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V1ce-1") {
     field(DESC,"Module 1 voltage VCE path 1")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 65)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V1f-1") {
     field(DESC,"Module 1 voltage VF path 1")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 67)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V2ce-1") {
     field(DESC,"Module 1 voltage VCE path 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 69)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)V2f-1") {
     field(DESC,"Module 1 voltage VF path 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 71)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V3-1") {
     field(DESC,"Module 1 voltage breaker")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 73)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V1ce-2") {
     field(DESC,"Module 2 voltage VCE path 1")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 75)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
 
 record(ai, "$(P)$(D)V1f-2") {
     field(DESC,"Module 2 voltage VF path 1")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 77)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V2ce-2") {
     field(DESC,"Module 2 voltage VCE path 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 79)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"3")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V2f-2") {
     field(DESC,"Module 2 voltage VF path 2")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 81)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }
+
 
 record(ai, "$(P)$(D)V3-2") {
     field(DESC,"Module 2 voltage breaker")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 83)INT32_BE")
-    field(EGU,"mV")
-    field(PREC,"4")
-    field(SCAN,"1 second")
+    field(LINR, "SLOPE")
+    field(ESLO, "0.001")    
+    field(EGU,"V")
+    field(PREC,"2")
+    field(SCAN,"I/O Intr")
 }

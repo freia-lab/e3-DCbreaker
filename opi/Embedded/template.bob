@@ -252,4 +252,28 @@
       <x>285</x>
     </widget>
   </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_3</name>
+    <macros>
+      <PV_NAME>MAG-EE-1:PT01</PV_NAME>
+    </macros>
+    <x>110</x>
+    <y>275</y>
+    <width>385</width>
+    <height>22</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_29</name>
+      <pv_name>$(PV_NAME).$(FIELD)</pv_name>
+      <width>280</width>
+      <height>22</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_30</name>
+      <pv_name>$(PV_NAME)</pv_name>
+      <x>285</x>
+    </widget>
+  </widget>
 </display>
