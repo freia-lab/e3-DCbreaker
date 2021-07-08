@@ -8,18 +8,34 @@ record(ai, "$(P)$(D)SerialNum") {
     field(SCAN,"I/O Intr")
 }
 
-record(ai, "$(P)$(D)SoftwVer") {
-    field(DESC,"Software version")
+record(ai, "$(P)$(D)SoftwVerRaw") {
+    field(DESC,"Software version raw")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 2)UINT16")
     field(SCAN,"I/O Intr")
+    field(FLNK,"$(P)$(D)SoftwVer")
 }
 
-record(ai, "$(P)$(D)FPGAVer") {
-    field(DESC,"FPGA version")
+record(calc, "$(P)$(D)SoftwVer") {
+    field(DESC,"Software version")
+    field(INPA,"$(P)$(D)SoftwVerRaw")
+    field(CALC,"FLOOR(A/16^2)+0.01*(A%16)")
+    field(PREC, "2")
+}
+
+record(ai, "$(P)$(D)FPGAVerRaw") {
+    field(DESC,"FPGA version raw")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_DATA) 3)UINT16")
     field(SCAN,"I/O Intr")
+    field(FLNK,"$(P)$(D)FPGAVer")
+}
+
+record(calc, "$(P)$(D)FPGAVer") {
+    field(DESC,"FPGA version")
+    field(INPA,"$(P)$(D)FPGAVerRaw")
+    field(CALC,"FLOOR(A/16^2)+0.01*(A%16)")
+    field(PREC, "2")
 }
 
 record(ai, "$(P)$(D)DevTyp") {
@@ -99,18 +115,10 @@ record(ai, "$(P)$(D)OvldFactor:sSetV") {
     field(DESC,"Overload factor")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_PARAM) 1)UINT16")
-#    field(LINR, "SLOPE")
-#    field(ESLO, "0.001")
     field(EGU,"%")
-#    field(HOPR,"80.0")
-#    field(LOPR,"-70.0")
     field(PREC,"0")
-#    field(ADEL,"0.1")
-#    field(MDEL,"0.01")
-#    field(HIGH,"-55.0")
-#    field(HSV,"MINOR")
-#    field(HIHI,"-40.0")
-#    field(HHSV,"MAJOR")
+    field(HIGH,"125")
+    field(HSV,"MAJOR")
     field(SCAN,"I/O Intr")
 }
 
@@ -118,18 +126,10 @@ record(ai, "$(P)$(D)OvldTime:sSetV") {
     field(DESC,"Overload time")
     field(DTYP,"asynInt32")
     field(INP,"@asyn($(PORT_PARAM) 2)UINT16")
-#    field(LINR, "SLOPE")
-#    field(ESLO, "0.001")
     field(EGU,"s")
-#    field(HOPR,"80.0")
-#    field(LOPR,"-70.0")
     field(PREC,"0")
-#    field(ADEL,"0.1")
-#    field(MDEL,"0.01")
-#    field(HIGH,"-55.0")
-#    field(HSV,"MINOR")
-#    field(HIHI,"-40.0")
-#    field(HHSV,"MAJOR")
+    field(HIGH,"100")
+    field(HSV,"MAJOR")
     field(SCAN,"I/O Intr")
 }
 
@@ -238,15 +238,11 @@ record(ai, "$(P)$(D)PT01") {
     field(LINR, "SLOPE")
     field(ESLO, "0.001")
     field(EGU,"bar")
-#    field(HOPR,"80.0")
-#    field(LOPR,"-70.0")
     field(PREC,"2")
-#    field(ADEL,"0.1")
-#    field(MDEL,"0.01")
-#    field(HIGH,"-55.0")
-#    field(HSV,"MINOR")
-#    field(HIHI,"-40.0")
-#    field(HHSV,"MAJOR")
+    field(HIGH,"16.00")
+    field(HSV,"MINOR")
+    field(HIHI,"23.00")
+    field(HHSV,"MAJOR")
     field(SCAN,"I/O Intr")
 }
 
@@ -259,6 +255,10 @@ record(ai, "$(P)$(D)PT02") {
     field(ESLO, "0.001")
     field(EGU,"bar")
     field(PREC,"2")
+    field(HIGH,"16.00")
+    field(HSV,"MINOR")
+    field(HIHI,"23.00")
+    field(HHSV,"MAJOR")
     field(SCAN,"I/O Intr")
 }
 
@@ -340,6 +340,8 @@ record(ai, "$(P)$(D)TT101") {
     field(EGU,"°C")
     field(PREC,"0")
     field(SCAN,"I/O Intr")
+    field(HIGH,"150")
+    field(HSV,"MAJOR")
 }
 
 record(ai, "$(P)$(D)TT201") {
@@ -349,6 +351,8 @@ record(ai, "$(P)$(D)TT201") {
     field(EGU,"°C")
     field(PREC,"0")
     field(SCAN,"I/O Intr")
+    field(HIGH,"150")
+    field(HSV,"MAJOR")
 }
 
 record(ai, "$(P)$(D)TT01diff") {

@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DCBreaker stat</name>
+  <width>400</width>
+  <height>300</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Current Status</text>
+    <x>11</x>
+    <width>162</width>
+    <height>25</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <PV_NAME>$(P)$(D)GlobStat</PV_NAME>
+    </macros>
+    <x>132</x>
+    <y>42</y>
+    <width>240</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <pv_name>$(PV_NAME).BB</pv_name>
+      <x>60</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Pyrofuse triggered</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>$(PV_NAME).BA</pv_name>
+      <x>75</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Overcurrent shutdown</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <pv_name>$(PV_NAME).B9</pv_name>
+      <x>90</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Pyrofuse ready</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <pv_name>$(PV_NAME).B8</pv_name>
+      <x>105</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Overload shutdown</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_11</name>
+      <pv_name>$(PV_NAME).B7</pv_name>
+      <x>120</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>System under pressure</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_12</name>
+      <pv_name>$(PV_NAME).B6</pv_name>
+      <x>135</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Dump resistor cooldown</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_13</name>
+      <pv_name>$(PV_NAME).B5</pv_name>
+      <x>150</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Warning</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_14</name>
+      <pv_name>$(PV_NAME).B4</pv_name>
+      <x>165</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Fault</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_15</name>
+      <pv_name>$(PV_NAME).B3</pv_name>
+      <x>180</x>
+      <width>15</width>
+      <height>15</height>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Overload mode</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_16</name>
+      <pv_name>$(PV_NAME).B2</pv_name>
+      <x>195</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Closed</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_17</name>
+      <pv_name>$(PV_NAME).B1</pv_name>
+      <x>210</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Voltage interlock</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_18</name>
+      <pv_name>$(PV_NAME).B0</pv_name>
+      <x>225</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Ready</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <macros>
+      <PV_NAME>$(P)$(D)GlobWarn</PV_NAME>
+    </macros>
+    <x>132</x>
+    <y>88</y>
+    <width>240</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED_21</name>
+      <pv_name>$(PV_NAME).BD</pv_name>
+      <x>30</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Asymmetric current</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_22</name>
+      <pv_name>$(PV_NAME).BC</pv_name>
+      <x>45</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>RTemp delta</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_23</name>
+      <pv_name>$(PV_NAME).BB</pv_name>
+      <x>60</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>RTemp 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_24</name>
+      <pv_name>$(PV_NAME).BA</pv_name>
+      <x>75</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>RTemp 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_25</name>
+      <pv_name>$(PV_NAME).B9</pv_name>
+      <x>90</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>TSense delta</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_26</name>
+      <pv_name>$(PV_NAME).B8</pv_name>
+      <x>105</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Tsense 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_27</name>
+      <pv_name>$(PV_NAME).B7</pv_name>
+      <x>120</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Tsense 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_28</name>
+      <pv_name>$(PV_NAME).B6</pv_name>
+      <x>135</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Fan 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_29</name>
+      <pv_name>$(PV_NAME).B5</pv_name>
+      <x>150</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Fan 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_30</name>
+      <pv_name>$(PV_NAME).B4</pv_name>
+      <x>165</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Overpressure</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_31</name>
+      <pv_name>$(PV_NAME).B3</pv_name>
+      <x>180</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Pressure delta</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_32</name>
+      <pv_name>$(PV_NAME).B2</pv_name>
+      <x>195</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Pressure 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_33</name>
+      <pv_name>$(PV_NAME).B1</pv_name>
+      <x>210</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Pressure 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_34</name>
+      <pv_name>$(PV_NAME).B0</pv_name>
+      <x>225</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Overload</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Global status</text>
+    <x>12</x>
+    <y>35</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>Global warning</text>
+    <x>12</x>
+    <y>81</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>Global error</text>
+    <x>12</x>
+    <y>127</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>Module status</text>
+    <x>12</x>
+    <y>173</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>Module warning</text>
+    <x>12</x>
+    <y>219</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>Module error</text>
+    <x>12</x>
+    <y>265</y>
+    <width>110</width>
+    <height>17</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_5</name>
+    <macros>
+      <PV_NAME>$(P)$(D)ModuleStat</PV_NAME>
+    </macros>
+    <x>132</x>
+    <y>180</y>
+    <width>240</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED_60</name>
+      <pv_name>$(PV_NAME).B6</pv_name>
+      <x>135</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Communication CU4Fan</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_61</name>
+      <pv_name>$(PV_NAME).B5</pv_name>
+      <x>150</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Communication MU4HV2 </tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_62</name>
+      <pv_name>$(PV_NAME).B4</pv_name>
+      <x>165</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>Communication MU4HV1 </tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_63</name>
+      <pv_name>$(PV_NAME).B3</pv_name>
+      <x>180</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>GU4</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_64</name>
+      <pv_name>$(PV_NAME).B2</pv_name>
+      <x>195</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>GU3</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_65</name>
+      <pv_name>$(PV_NAME).B1</pv_name>
+      <x>210</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>GU2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_66</name>
+      <pv_name>$(PV_NAME).B0</pv_name>
+      <x>225</x>
+      <width>15</width>
+      <height>15</height>
+      <tooltip>GU1</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_6</name>
+    <macros>
+      <PV_NAME>$(P)$(D)ModuleWarn</PV_NAME>
+    </macros>
+    <x>132</x>
+    <y>227</y>
+    <width>240</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED_75</name>
+      <pv_name>$(PV_NAME).B7</pv_name>
+      <x>120</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VF 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_76</name>
+      <pv_name>$(PV_NAME).B6</pv_name>
+      <x>135</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VCE 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_77</name>
+      <pv_name>$(PV_NAME).B5</pv_name>
+      <x>150</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VF 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_78</name>
+      <pv_name>$(PV_NAME).B4</pv_name>
+      <x>165</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VCE 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_79</name>
+      <pv_name>$(PV_NAME).B3</pv_name>
+      <x>180</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VF 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_80</name>
+      <pv_name>$(PV_NAME).B2</pv_name>
+      <x>195</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VCE 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_81</name>
+      <pv_name>$(PV_NAME).B1</pv_name>
+      <x>210</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VF 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_82</name>
+      <pv_name>$(PV_NAME).B0</pv_name>
+      <x>225</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VCE 1</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_10</name>
+    <macros>
+      <PV_NAME>$(P)$(D)GlobErr</PV_NAME>
+    </macros>
+    <x>132</x>
+    <y>134</y>
+    <width>240</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED_101</name>
+      <pv_name>$(PV_NAME).BD</pv_name>
+      <x>30</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Asymmetric current</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_102</name>
+      <pv_name>$(PV_NAME).BC</pv_name>
+      <x>45</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>RTemp delta</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_103</name>
+      <pv_name>$(PV_NAME).BB</pv_name>
+      <x>60</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>RTemp 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_104</name>
+      <pv_name>$(PV_NAME).BA</pv_name>
+      <x>75</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>RTemp 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_105</name>
+      <pv_name>$(PV_NAME).B9</pv_name>
+      <x>90</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>TSense delta</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_106</name>
+      <pv_name>$(PV_NAME).B8</pv_name>
+      <x>105</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Tsense 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_107</name>
+      <pv_name>$(PV_NAME).B7</pv_name>
+      <x>120</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Tsense 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_108</name>
+      <pv_name>$(PV_NAME).B6</pv_name>
+      <x>135</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Fan 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_109</name>
+      <pv_name>$(PV_NAME).B5</pv_name>
+      <x>150</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Fan 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_110</name>
+      <pv_name>$(PV_NAME).B4</pv_name>
+      <x>165</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Overpressure</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_111</name>
+      <pv_name>$(PV_NAME).B3</pv_name>
+      <x>180</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Pressure delta</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_112</name>
+      <pv_name>$(PV_NAME).B2</pv_name>
+      <x>195</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Pressure 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_113</name>
+      <pv_name>$(PV_NAME).B1</pv_name>
+      <x>210</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Pressure 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_114</name>
+      <pv_name>$(PV_NAME).B0</pv_name>
+      <x>225</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Overload</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_38</name>
+    <macros>
+      <PV_NAME>$(P)$(D)ModuleErr</PV_NAME>
+    </macros>
+    <x>132</x>
+    <y>271</y>
+    <width>240</width>
+    <height>15</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED_123</name>
+      <pv_name>$(PV_NAME).B7</pv_name>
+      <x>120</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VF 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_124</name>
+      <pv_name>$(PV_NAME).B6</pv_name>
+      <x>135</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VCE 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_125</name>
+      <pv_name>$(PV_NAME).B5</pv_name>
+      <x>150</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VF 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_126</name>
+      <pv_name>$(PV_NAME).B4</pv_name>
+      <x>165</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 2 VCE 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_127</name>
+      <pv_name>$(PV_NAME).B3</pv_name>
+      <x>180</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VF 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_128</name>
+      <pv_name>$(PV_NAME).B2</pv_name>
+      <x>195</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VCE 2</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_129</name>
+      <pv_name>$(PV_NAME).B1</pv_name>
+      <x>210</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VF 1</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_130</name>
+      <pv_name>$(PV_NAME).B0</pv_name>
+      <x>225</x>
+      <width>15</width>
+      <height>15</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+      <tooltip>Module 1 VCE 1</tooltip>
+    </widget>
+  </widget>
+</display>
