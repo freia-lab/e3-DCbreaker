@@ -55,6 +55,10 @@
       <x>90</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Pyrofuse ready</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -75,6 +79,10 @@
       <x>120</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>System under pressure</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -131,6 +139,10 @@
       <x>195</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Closed</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -139,6 +151,10 @@
       <x>210</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Voltage interlock</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -147,6 +163,10 @@
       <x>225</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Ready</tooltip>
     </widget>
   </widget>
@@ -451,6 +471,10 @@
       <x>135</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Communication CU4Fan</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -459,6 +483,10 @@
       <x>150</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Communication MU4HV2 </tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -467,6 +495,10 @@
       <x>165</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>Communication MU4HV1 </tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -475,6 +507,10 @@
       <x>180</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>GU4</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -483,6 +519,10 @@
       <x>195</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>GU3</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -491,6 +531,10 @@
       <x>210</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>GU2</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -499,6 +543,10 @@
       <x>225</x>
       <width>15</width>
       <height>15</height>
+      <on_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </on_color>
       <tooltip>GU1</tooltip>
     </widget>
   </widget>

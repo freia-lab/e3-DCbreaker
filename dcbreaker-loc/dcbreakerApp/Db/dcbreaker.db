@@ -117,8 +117,7 @@ record(ai, "$(P)$(D)OvldFactor:sSetV") {
     field(INP,"@asyn($(PORT_PARAM) 1)UINT16")
     field(EGU,"%")
     field(PREC,"0")
-    field(HIGH,"125")
-    field(HSV,"MAJOR")
+    field(HOPR,"125")
     field(SCAN,"I/O Intr")
 }
 
@@ -128,8 +127,7 @@ record(ai, "$(P)$(D)OvldTime:sSetV") {
     field(INP,"@asyn($(PORT_PARAM) 2)UINT16")
     field(EGU,"s")
     field(PREC,"0")
-    field(HIGH,"100")
-    field(HSV,"MAJOR")
+    field(HOPR,"100")
     field(SCAN,"I/O Intr")
 }
 

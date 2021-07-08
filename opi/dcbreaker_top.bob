@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>DCBreaker TOP</name>
+  <name>DCBreaker</name>
   <width>1250</width>
   <height>980</height>
   <widget type="tabs" version="2.0.0">
@@ -43,6 +43,5 @@
     </tabs>
     <width>1230</width>
     <height>960</height>
-    <active_tab>1</active_tab>
   </widget>
 </display>
