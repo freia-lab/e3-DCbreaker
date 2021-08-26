@@ -1,4 +1,4 @@
-require dcbreaker,0.1.0
+require dcbreaker,1.0.0
  
 #Specify the TCP endpoint and give your 'bus' an arbitrary name eg. "asynstream1".
 #drvAsynIPPortConfigure 'port name' 'host:port [protocol]' priority 'disable auto-connect' noProcessEos

@@ -897,4 +897,19 @@
     <y>42</y>
     <resize>2</resize>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions execute_as_one="true">
+      <action type="open_webpage">
+        <url>http://$(URL)</url>
+        <description>Open Webpage</description>
+      </action>
+    </actions>
+    <text>Open Web Interface...</text>
+    <x>844</x>
+    <y>579</y>
+    <width>210</width>
+    <tooltip>Gives full controll over the instrument.
+Password protected.</tooltip>
+  </widget>
 </display>
