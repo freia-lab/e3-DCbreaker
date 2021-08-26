@@ -20,6 +20,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_26</name>
@@ -44,6 +45,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_32</name>
@@ -68,6 +70,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_40</name>
@@ -92,6 +95,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_42</name>
@@ -116,6 +120,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_48</name>
@@ -140,6 +145,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_50</name>
@@ -164,6 +170,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_52</name>
@@ -188,6 +195,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_54</name>
@@ -212,6 +220,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_56</name>
@@ -236,6 +245,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_58</name>
@@ -260,6 +270,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_60</name>
@@ -284,6 +295,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_62</name>
@@ -308,6 +320,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_64</name>
@@ -332,6 +345,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_66</name>
@@ -356,6 +370,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_68</name>
@@ -380,6 +395,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_70</name>
@@ -404,6 +420,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_72</name>
@@ -428,6 +445,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_74</name>
@@ -452,6 +470,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_76</name>
@@ -476,6 +495,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_78</name>
@@ -500,6 +520,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_80</name>
@@ -524,6 +545,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_82</name>
@@ -548,6 +570,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_84</name>
@@ -572,6 +595,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_86</name>
@@ -596,6 +620,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_88</name>
@@ -620,6 +645,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_90</name>
@@ -644,6 +670,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_92</name>
@@ -668,6 +695,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_94</name>
@@ -692,6 +720,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_96</name>
@@ -716,6 +745,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_98</name>
@@ -740,6 +770,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_100</name>
@@ -811,6 +842,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_44</name>
@@ -835,6 +867,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_46</name>
@@ -859,6 +892,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_102</name>
@@ -883,6 +917,7 @@
       <width>280</width>
       <height>22</height>
       <horizontal_alignment>1</horizontal_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_104</name>
