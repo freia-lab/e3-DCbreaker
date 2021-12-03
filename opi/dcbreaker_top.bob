@@ -42,6 +42,18 @@
           </widget>
         </children>
       </tab>
+      <tab>
+        <name>Debug</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_2</name>
+            <file>Embedded/debug.bob</file>
+            <y>3</y>
+            <width>1240</width>
+            <height>919</height>
+          </widget>
+        </children>
+      </tab>
     </tabs>
     <width>1230</width>
     <height>960</height>
